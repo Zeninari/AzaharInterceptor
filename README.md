@@ -46,6 +46,46 @@ after that you need to append these to your iiSU files:
       ]
     },
 
+### Extention
+The Below is an example using the default config:
+
+      "longName": "Nintendo 3DS",
+      "releaseYear": "2011",
+      "releaseDate": "2011-02-26",
+      "manufacturer": "Nintendo",
+      "retroAchievementsId": "NA",
+      "romExtensions": [
+        ".3ds",
+        ".cia",
+        ".3DS",
+        ".3dsx",
+        ".3DSX",
+        ".app",
+        ".APP",
+        ".axf",
+        ".AXF",
+        ".cci",
+        ".CCI",
+        ".cxi",
+        ".CXI",
+        ".elf",
+        ".ELF",
+        ".z3dsx",
+        ".Z3DSX",
+        ".zcci",
+        ".ZCCI",
+        ".zcxi",
+        ".ZCXI",
+        ".7z",
+        ".7Z",
+        ".zip",
+        ".ZIP",
+        ".zcia",
+        ".ZCIA",
+        ".n3ds", <- new extention
+        ".N3DS"  <- new extention
+      ],
+
 ### supported_emulators.json
     {
       "name": "Azahar Interceptor",
