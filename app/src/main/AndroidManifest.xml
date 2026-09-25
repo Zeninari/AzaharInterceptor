@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <package android:name="org.azahar_emu.azahar" />
+        <package android:name="io.github.lime3ds.android" />
+        <package android:name="io.github.azaharplus.android" />
+
+        <package android:name="com.retroarch" />
+        <package android:name="com.retroarch.aarch64" />
+        <package android:name="com.retroarch.ra32" />
+
+        <package android:name="org.citra.citra_emu" />
+        <package android:name="org.citra.citra_emu.canary" />
+        <package android:name="org.citra.emu" />
+
+        <package android:name="io.github.mandarine3ds.mandarine" />
+        <package android:name="com.panda3ds.pandroid" />
+        <package android:name="org.gamerytb.citra.canary" />
+        <package android:name="io.github.borked3ds.android" />
+        <package android:name="org.cytrus.cytrus_emu" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AzaharInterceptor">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

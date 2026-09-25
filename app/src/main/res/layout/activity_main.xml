@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/pageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Debug Page -->
+        <LinearLayout
+            android:id="@+id/debugPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azahar Interceptor"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debug Information"
+                android:textSize="16sp"
+                android:paddingBottom="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/debugText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textIsSelectable="true" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!-- Extension Page -->
+        <LinearLayout
+            android:id="@+id/createPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Extension"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create shortcuts for installed Azahar titles."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shortcut creation will be added here."
+                android:textSize="14sp"
+                android:paddingTop="24dp" />
+
+        </LinearLayout>
+
+        <!-- Settings Page -->
+        <ScrollView
+            android:id="@+id/settingsPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary"
+                    android:paddingBottom="24dp" />
+
+                <!-- Shortcut Extension -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shortcut Extension"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The file extension used for iiSU shortcut files."
+                    android:textSize="14sp"
+                    android:paddingBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/extensionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=".n3ds"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <!-- Azahar Directory -->
+                <TextView
+                    android:id="@+id/directoryLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Azahar Directory"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The directory used to locate installed titles."
+                    android:textSize="14sp"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/directoryValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No directory selected"
+                    android:textSize="14sp"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/selectDirectoryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Directory" />
+
+                <!-- Emulator -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3DS Emulator"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose the emulator that should receive launched titles."
+                    android:textSize="14sp"
+                    android:paddingBottom="6dp" />
+
+                <Spinner
+                    android:id="@+id/emulatorSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/emulatorWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Warning: Azahar Builds are the primary supported emulators. Compatibility with other emulators is not guaranteed."
+                    android:textColor="?android:attr/colorError"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <!-- Database --> <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shortcut Database"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select the database used when creating shortcuts."
+                    android:textSize="14sp"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/databaseValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No database selected"
+                    android:textSize="14sp"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/selectDatabaseButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Database" />
+                -->
+
+                <!-- Save -->
+                <Button
+                    android:id="@+id/saveSettingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Settings"
+                    android:layout_marginTop="24dp" />
+
+                <!-- About -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorSecondary"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="iiSU shortcut interceptor for 3DS emulators"
+                    android:textSize="14sp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fluxer Contact: zeninari"
+                    android:textSize="14sp"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/versionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:paddingBottom="12dp" />
+
+                <Button
+                    android:id="@+id/projectButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project GitHub" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled" />
+
+</LinearLayout>
