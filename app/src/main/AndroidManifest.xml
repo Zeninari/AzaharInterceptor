@@ -4,22 +4,9 @@
 
     <queries>
         <package android:name="org.azahar_emu.azahar" />
+        <package android:name="org.azahar_emu.azahar.debug" />
         <package android:name="io.github.lime3ds.android" />
         <package android:name="io.github.azaharplus.android" />
-
-        <package android:name="com.retroarch" />
-        <package android:name="com.retroarch.aarch64" />
-        <package android:name="com.retroarch.ra32" />
-
-        <package android:name="org.citra.citra_emu" />
-        <package android:name="org.citra.citra_emu.canary" />
-        <package android:name="org.citra.emu" />
-
-        <package android:name="io.github.mandarine3ds.mandarine" />
-        <package android:name="com.panda3ds.pandroid" />
-        <package android:name="org.gamerytb.citra.canary" />
-        <package android:name="io.github.borked3ds.android" />
-        <package android:name="org.cytrus.cytrus_emu" />
     </queries>
 
     <application
