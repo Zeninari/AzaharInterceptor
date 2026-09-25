@@ -30,7 +30,7 @@ After installing go to the settings tab and select your Azahar User directory. i
 
 after that you need to append these to your iiSU files:
 
-### emulators.json
+### emulators.json (application)
     {
       "id": "AZAHARINTERCEPTOR",
       "name": "Azahar Interceptor",
@@ -46,7 +46,7 @@ after that you need to append these to your iiSU files:
       ]
     },
 
-### Extention
+### emulators.json (extention)
 The Below is an example using the default config:
 
       "longName": "Nintendo 3DS",
