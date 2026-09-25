@@ -28,7 +28,7 @@ Install the Apk and continue to configuration
 
 After installing go to the settings tab and select your Azahar User directory. its the one that has your nand, sdmc, load, and shaders for example.
 
-after that you need to append these to your iiSU files:
+after that you need to append these to your iiSU files; the 1st and 3rd are appended below AZAHARPLUS:
 
 ### emulators.json (application)
     {
