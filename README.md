@@ -5,8 +5,9 @@ This is mainly for use with iiSU but may work elsewhere.
 ## Features
 
 - Launching Internal Content
+- Launching Roms as passthrough content
 - Debugging Info for in case something goes wrong! (Rivoting i know)
-- Customization support
+- Customization support for the extention
 
 ## Supported Emulators
 
@@ -115,7 +116,10 @@ Name (Serial) (Region).n3ds
 So For My Home Menu:\
 3DS Home Menu (USA-3DS-MENU) (U).n3ds containing 0004003000008F02
 
+### iiSU
+make sure to add the interceptor as your EMU of choice by hovering over 3DS and pressing:
 
+Select -> Edit Console Settings -> Emulator -> Choose Emulator -> Azahar Interceptor -> Summary -> Update Console
 
 ## Usage
 
