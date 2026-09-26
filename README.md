@@ -23,7 +23,7 @@ This is mainly for use with iiSU but may work elsewhere.
 
 ## Installation
 
-Install the Apk and continue to configuration
+Install the APK and continue to configuration
 
 ## Configuration
 
