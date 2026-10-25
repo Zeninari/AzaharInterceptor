@@ -29,9 +29,13 @@ Install the APK and continue to configuration
 
 After installing go to the settings tab and select your Azahar User directory. its the one that has your nand, sdmc, load, and shaders for example.
 
+Pryxo made an amazing tool that can append emulators that iiSU doesn't support yet, including my tool! all you have to do is visit Pryxo's page located At https://pryxo.github.io/iiSU-Emulator-Editor/ and input your emuladores.json. from there you can add my tool, as well as appending the default shortcut type, if you want to use the default .n3ds extension. please note, do **NOT** set it to something that is already a ROM file type unless you aren't going to use that type of file.
+
+## Old Method:
+
 after that you need to append these to your iiSU files; the 1st and 3rd are appended below AZAHARPLUS:
 
-### emulators.json (application)
+### emuladores.json (application)
     {
       "id": "AZAHARINTERCEPTOR",
       "name": "Azahar Interceptor",
@@ -47,7 +51,7 @@ after that you need to append these to your iiSU files; the 1st and 3rd are appe
       ]
     },
 
-### emulators.json (extention)
+### emuladores.json (extention)
 The Below is an example using the default config:
 
       "longName": "Nintendo 3DS",
@@ -87,7 +91,7 @@ The Below is an example using the default config:
         ".N3DS"  <- new extention
       ],
 
-### supported_emulators.json
+### supported_emuladores.json
     {
       "name": "Azahar Interceptor",
       "packages": [
